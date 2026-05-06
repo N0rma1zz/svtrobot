@@ -1,0 +1,38 @@
+{
+  "description": "robot_20_3060 当前三路 2M USB 相机配置。三台同型号相机 by-id 不完整，使用 /dev/v4l/by-path 绑定物理 USB 口。当前 head/left/right 先按 USB 口顺序填写；如果画面对应错了，只交换下面三条 device_path。",
+  "defaults": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "raw_fps": 30,
+    "compressed_fps": 30,
+    "pixel_format": "",
+    "raw_reliability": "reliable",
+    "compressed_reliability": "best_effort",
+    "history": "keep_last",
+    "depth": 1,
+    "jpeg_quality": 80,
+    "auto_exposure": -1,
+    "exposure_time": -1
+  },
+  "cameras": {
+    "head": {
+      "device_path": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:3:1.0-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "left": {
+      "device_path": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:5:1.0-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "right": {
+      "device_path": "/dev/v4l/by-path/pci-0000:00:14.0-usb-0:6:1.0-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    }
+  }
+}

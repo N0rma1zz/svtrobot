@@ -1,0 +1,38 @@
+{
+  "description": "OpenArm 三路 USB 相机稳定设备路径和采集参数配置。优先使用 /dev/v4l/by-id；如果同型号相机没有唯一序列号，可使用 /dev/v4l/by-path 绑定物理 USB 口。",
+  "defaults": {
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "raw_fps": 30,
+    "compressed_fps": 30,
+    "pixel_format": "",
+    "raw_reliability": "reliable",
+    "compressed_reliability": "best_effort",
+    "history": "keep_last",
+    "depth": 1,
+    "jpeg_quality": 80,
+    "auto_exposure": -1,
+    "exposure_time": -1
+  },
+  "cameras": {
+    "head": {
+      "device_path": "/dev/v4l/by-id/usb-head-camera-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "left": {
+      "device_path": "/dev/v4l/by-id/usb-left-wrist-camera-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    },
+    "right": {
+      "device_path": "/dev/v4l/by-id/usb-right-wrist-camera-video-index0",
+      "width": 640,
+      "height": 480,
+      "fps": 30
+    }
+  }
+}

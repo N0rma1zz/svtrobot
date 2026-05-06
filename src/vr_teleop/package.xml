@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>vr_teleop</name>
+  <version>0.1.0</version>
+  <description>
+    VR teleoperation + camera streaming for OpenArm bimanual robot.
+    Consolidated from XRoboToolkit-Teleop-Sample-Cpp (main_openarm.cpp)
+    and XRoboToolkit-Orin-Video-Sender (video_sender_pc.cpp).
+  </description>
+  <maintainer email="mj-robot@example.com">mj-robot</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- teleop_openarm -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>control_msgs</depend>
+  <depend>orocos_kdl_vendor</depend>
+  <depend>kdl_parser</depend>
+  <depend>urdf</depend>
+  <depend>eigen</depend>
+  <depend>nlohmann-json-dev</depend>
+
+  <!-- video_sender -->
+  <depend>cv_bridge</depend>
+  <depend>libopencv-dev</depend>
+  <!-- ffmpeg dev (libavcodec/libavutil/libswscale) is found via pkg-config -->
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>openarm_vla</name>
+  <version>0.0.1</version>
+  <description>OpenArm VLA ROS2 integration package for LeRobot recording and camera topic publishing.</description>
+  <maintainer email="normal@example.com">normal</maintainer>
+  <license>CC-BY-NC-SA-4.0</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>realsense2_camera</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

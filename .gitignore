@@ -1,0 +1,36 @@
+# ROS2 / colcon build products
+build/
+install/
+install_vla/
+log/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# CMake / compiler artifacts
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.o
+*.a
+
+# Runtime output
+outputs/
+*.bag
+*.db3
+*.mcap
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
