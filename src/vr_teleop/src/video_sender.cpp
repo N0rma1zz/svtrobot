@@ -502,7 +502,7 @@ static void stream_to_ros(int fd, const std::string &topic1, const std::string &
         std::this_thread::sleep_until(t_next);
     }
     // Signal ros_thread to stop, but don't set g_stop (listen_mode needs to continue)
-    std::atomic<bool> ros_done{true};
+    session_stop = true;
     if (ros_thread.joinable()) ros_thread.join();
     if (preview) cv::destroyAllWindows();
 }
